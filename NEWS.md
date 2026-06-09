@@ -1,3 +1,11 @@
+# extr 1.1.1 (2026-06-09)
+
+## Changes in 1.1.1
+
+* Updated the package citation to the published article in *Methods in Ecology and Evolution*.
+* Added examples for irregularly spaced observation times and missing observations in `ext_di()`.
+* Clarified the distinction between the default ML method and the OEAR method for irregular or mildly incomplete time series.
+
 # extr 1.1.0 (2026-03-14)
 
 ## Changes in 1.1.0

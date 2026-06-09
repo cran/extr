@@ -11,5 +11,10 @@ Estimates extinction risk from population time series under a drifted Wiener pro
 \author{
 \strong{Maintainer}: Hiroshi Hakoyama \email{hiroshi.hakoyama@gmail.com} (\href{https://orcid.org/0000-0001-7464-0754}{ORCID}) [copyright holder]
 
+Authors:
+\itemize{
+  \item Hiroshi Hakoyama \email{hiroshi.hakoyama@gmail.com} (\href{https://orcid.org/0000-0001-7464-0754}{ORCID}) [copyright holder]
+}
+
 }
 \keyword{internal}

@@ -1,10 +1,13 @@
 citations <- c(
   bibentry(
     bibtype = "Article",
-    title = "Confidence intervals for extinction risk: validating population viability analysis with limited data",
+    title = "Confidence intervals for extinction risk: Validating population viability analysis with limited data",
     author = person("Hiroshi", "Hakoyama"),
-    year = "in press",
+    year = "2026",
     journal = "Methods in Ecology and Evolution",
+    volume = "17",
+    pages = "1837--1850",
+    doi = "10.1111/2041-210X.70294",
     note = "Preprint available at https://doi.org/10.48550/arXiv.2509.09965"
   )
 )

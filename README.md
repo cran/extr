@@ -180,3 +180,42 @@ ext_di(dat, th = 100, method = "oear")
 #> Time window for extinction risk evaluation (years), th:     100.0
 #> Significance level, alpha:                                   0.05
 ```
+
+## Irregularly spaced observations
+
+The default ML method can use irregularly spaced observations directly.
+Under the drifted Wiener process model, the likelihood is evaluated for
+the observed time intervals, so no interpolation is needed.
+
+``` r
+dat_irregular <- subset(
+  dat,
+  Time %in% c(1959, 1960, 1962, 1965, 1969, 1974, 1980, 1987)
+)
+
+ext_di(dat_irregular, th = 100, ne = 10)
+```
+
+A mostly complete annual series with a few missing observations can also
+be supplied using `NA` values.
+
+``` r
+dat_with_na <- data.frame(
+  Time = 1959:1975,
+  Population = c(
+    44, 47, NA, 44, 46, 45, 46, NA, 39, 39,
+    42, 44, NA, 40, 33, 36, 34
+  )
+)
+
+ext_di(dat_with_na, th = 100, ne = 10)
+```
+
+For the OEAR method, mild missingness can be treated as a pragmatic
+effective-diffusion approximation. Avoid using `method = "oear"` when
+missing observations are numerous or observation intervals are highly
+heterogeneous.
+
+``` r
+ext_di(dat_with_na, th = 100, ne = 10, method = "oear")
+```
